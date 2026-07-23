@@ -2,7 +2,7 @@ const postsGrid = document.querySelector("#posts-grid");
 const resultCount = document.querySelector("#result-count");
 
 function getPosts() {
-  fetch("https://dummyjson.com/posts?limit=12")
+  fetch("https://dummyjson.com/posts?limit=50")
     .then(function (response) {
       if (!response.ok) {
         throw new Error("Could not load the posts.");
