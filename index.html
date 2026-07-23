@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tech Urban Conference</title>
+<link rel="stylesheet" href="/src/output.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Moon+Dance&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  .font-baloo { font-family: "Baloo 2", sans-serif; }
+  .font-moondance { font-family: "Moon Dance", cursive; }
+  .font-script { font-family: "Caveat", cursive; }
+</style>
+</head>
+<body class="bg-[#0b0b3d] text-white">
+
+  <header class="bg-black text-white relative overflow-hidden">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4 sm:py-6 relative z-20">
+      <div class="flex items-center gap-2">
+        <img src="/public/images/logo.png" alt="" class="h-10 sm:h-[10vh]">
+      </div>
+
+      <ul class="hidden md:flex items-center gap-6 lg:gap-10 text-sm font-medium">
+        <li><a href="#home" class="px-3 py-1 rounded">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+
+      <a href="#register" class="hidden sm:inline-block bg-[#ECA922] text-[#0008CA] text-sm font-semibold px-5 py-2 rounded-full">Register</a>
+
+      <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 z-30" aria-label="Toggle menu" aria-expanded="false" type="button">
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden flex-col gap-4 px-4 pb-5 text-sm font-medium relative z-20">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="#contact">Contact us</a>
+      <a href="#register" class="bg-[#ECA922] text-[#0008CA] px-5 py-2 rounded-full text-center">Register</a>
+    </div>
+
+
+
+    <img
+      src="/public/images/1890c23a5c4be2c9fe0aeb9b95964badb0b5755c.jpg"
+      alt="Robot illustration"
+      class="hidden sm:block absolute right-0 bottom-0 h-full w-auto max-w-[45%] md:max-w-[55%] object-cover object-top
+             mask-[linear-gradient(to_right,transparent,black_35%)]
+             [-webkit-mask-image:linear-gradient(to_right,transparent,black_35%)]"
+    />
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 pb-12 sm:pb-16 pt-4 sm:pt-6">
+      <div class="max-w-xl">
+        <h1 class="font-baloo font-bold text-4xl sm:text-5xl md:text-6xl leading-tight">tech urban</h1>
+        <p class="font-script text-[#0008CA] text-3xl sm:text-4xl md:text-5xl -mt-2">conference</p>
+        <p class="mt-4 sm:mt-6 text-sm text-gray-300 max-w-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus.
+          Ante laoreet congue porta diam malesuada. Magna purus venenatis suspendisse vulputate cursus orci. Nulla gravida ligula eget pellentesque.
+        </p>
+        <p class="mt-4 sm:mt-6 font-script text-[#ECA922] text-xl sm:text-2xl">connect. innovate. grow.</p>
+        <div class="mt-2 flex items-center gap-2 text-gray-200">
+          <img src="/public/images/calenda.png" alt="" class="h-8 sm:h-[4vh]">
+          <p class="font-moondance text-2xl sm:text-3xl">march 2024</p>
+        </div>
+        <a href="#register" class="inline-block bg-[#ECA922] text-[#0008CA] text-sm font-semibold px-5 py-2 rounded-full mt-6 sm:mt-8">Register</a>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-2 pb-6 relative z-20">
+      <span class="w-3 h-3 rounded-full bg-[#0008CA]"></span>
+      <span class="w-3 h-3 rounded-full bg-white"></span>
+      <span class="w-3 h-3 rounded-full bg-white"></span>
+    </div>
+  </header>
+
+  <section class="bg-[#ECA922] px-4 sm:px-6 py-14 sm:py-20 relative overflow-hidden">
+
+    <div class="absolute top-0 right-10 w-24 h-24 border-t-[3px] border-r-[3px] border-white/20 rotate-45 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-20 h-20 bg-black/10 [clip-path:polygon(0_100%,0_0,100%_100%)] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
+
+      <div class="relative h-70 sm:h-90 md:h-105">
+        <img src="/public/images/havk-terminal.jpg" alt="Code matrix" class="absolute top-0 left-0 w-3/5 h-3/5 rounded-2xl object-cover"/>
+        <img
+          src="/public/images/laptop.jpg"
+          alt="Developer working"
+          class="absolute bottom-0 right-0 w-3/5 h-3/5 rounded-2xl object-cover border-[#ECA922] border-10 sm:border-20"
+        />
+      </div>
+
+      <div>
+        <h2 class="font-baloo text-[#0008CA] text-3xl sm:text-4xl font-bold mb-4">About the event</h2>
+
+        <p class="text-sm text-black/80 mb-6 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada. Magna purus venenatis suspendisse vulputate cursus orci. Nulla gravida ligula eget pellentesque.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6 mb-8">
+          <p class="text-sm text-black/80 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada. Magna purus venenatis suspendisse vulputate cursus orci. Nulla gravida ligula eget pellentesque.
+          </p>
+          <p class="text-sm text-black/80 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada. Magna purus venenatis suspendisse vulputate cursus orci. Nulla gravida ligula eget pellentesque.
+          </p>
+        </div>
+
+        <a href="#register" class="block bg-white text-[#0008CA] text-sm font-semibold px-6 py-3 rounded-full text-center">Register</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="bg-[#0008CA] text-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-3 divide-x divide-white/20 py-8 sm:py-10 px-4 sm:px-6 text-center">
+      <div>
+        <p class="font-baloo text-2xl sm:text-4xl md:text-6xl text-[#ECA922] font-bold">3,000+</p>
+        <p class="font-baloo text-xs sm:text-base md:text-xl font-bold mt-1">Attendees</p>
+      </div>
+      <div>
+        <p class="font-baloo text-2xl sm:text-4xl md:text-6xl text-[#ECA922] font-bold">11+</p>
+        <p class="font-baloo text-xs sm:text-base md:text-xl font-bold mt-1">Sponsors</p>
+      </div>
+      <div>
+        <p class="font-baloo text-2xl sm:text-4xl md:text-6xl text-[#ECA922] font-bold">43+</p>
+        <p class="font-baloo text-xs sm:text-base md:text-xl font-bold mt-1">Investors</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="grid sm:grid-cols-2 lg:grid-cols-4">
+    <div class="relative h-48 sm:h-56 md:h-64">
+      <img src="/public/images/hackathon.jpg" alt="Hackathon" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/50 flex items-end">
+        <h3 class="font-baloo font-bold text-white text-2xl sm:text-3xl px-6 pb-6">Hackathon</h3>
+      </div>
+    </div>
+    <div class="relative h-48 sm:h-56 md:h-64">
+      <img src="/public/images/workshops.jpg" alt="Workshops" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/50 flex items-end">
+        <h3 class="font-baloo font-bold text-white text-2xl sm:text-3xl px-6 pb-6">Workshops</h3>
+      </div>
+    </div>
+    <div class="relative h-48 sm:h-56 md:h-64">
+      <img src="/public/images/seminars.jpg" alt="Seminars" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/50 flex items-end">
+        <h3 class="font-baloo font-bold text-white text-2xl sm:text-3xl px-6 pb-6">Seminars</h3>
+      </div>
+    </div>
+    <div class="relative h-48 sm:h-56 md:h-64">
+      <img src="/public/images/pitch sessions.jpg" alt="Pitch Sessions" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/50 flex items-end">
+        <h3 class="font-baloo font-bold text-white text-2xl sm:text-3xl px-6 pb-6">Pitch Sessions</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-14 sm:py-16 px-4 sm:px-6 text-black">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-baloo text-[#0008CA] text-3xl sm:text-4xl font-bold mb-8 sm:mb-10">Sponsors</h2>
+      <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+        <img src="/public/images/s1.png" alt="" class="h-8 sm:h-10 w-auto object-contain">
+        <img src="/public/images/s2.png" alt="" class="h-8 sm:h-10 w-auto object-contain">
+        <img src="/public/images/s3.png" alt="" class="h-8 sm:h-10 w-auto object-contain">
+        <img src="/public/images/s4.png" alt="" class="h-8 sm:h-10 w-auto object-contain">
+        <img src="/public/images/s5.png" alt="" class="h-8 sm:h-10 w-auto object-contain">
+        <img src="/public/images/s6.png" alt="" class="h-8 sm:h-10 w-auto object-contain">
+        <img src="/public/images/s7.png" alt="" class="h-8 sm:h-10 w-auto object-contain">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black text-white py-14 sm:py-16 px-4 sm:px-6 bg-[url('/public/images/bg-orb.png')] bg-cover bg-center bg-no-repeat">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-baloo text-[#0008CA] text-2xl sm:text-3xl md:text-4xl font-bold mb-10 sm:mb-12">what people are saying<br />about the event</h2>
+
+      <div class="mb-10">
+        <p class="text-sm text-gray-300 leading-relaxed max-w-xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada. Magna purus venenatis suspendisse vulputate cursus orci. Nulla gravida ligula eget pellentesque.
+        </p>
+        <p class="font-baloo font-bold text-[#ECA922] text-xl sm:text-2xl mt-4">John Doe</p>
+      </div>
+
+      <div class="mb-10">
+        <p class="text-sm text-gray-300 leading-relaxed max-w-xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada. Magna purus venenatis suspendisse vulputate cursus orci. Nulla gravida ligula eget pellentesque.
+        </p>
+        <p class="font-baloo font-bold text-[#ECA922] text-xl sm:text-2xl mt-4">John Doe</p>
+      </div>
+
+      <div>
+        <p class="text-sm text-gray-300 leading-relaxed max-w-xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada. Magna purus venenatis suspendisse vulputate cursus orci. Nulla gravida ligula eget pellentesque.
+        </p>
+        <p class="font-baloo font-bold text-[#ECA922] text-xl sm:text-2xl mt-4">John Doe</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="relative bg-[url('/public/images/bulb-bg.png')] bg-cover sm:bg-size-[100%_auto] bg-center bg-no-repeat py-14 sm:py-16 px-4 sm:px-6">
+    <div class="relative max-w-3xl mx-auto grid sm:grid-cols-2 gap-8 sm:gap-6">
+      <div class="bg-white overflow-hidden isolate rounded-tr-[120px] sm:rounded-tr-[200px] rounded-bl-[80px] sm:rounded-bl-[130px] mx-auto w-full max-w-xs">
+        <img src="/public/images/woman labourer.png" alt="Tech Today" class="w-full h-60 sm:h-72 object-cover block" />
+        <div class="p-6">
+          <h3 class="font-baloo text-lg font-bold mb-2 text-black">Tech Today</h3>
+          <p class="text-sm text-[#0008CA] leading-relaxed mb-4">
+            Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus.
+          </p>
+          <div class="flex justify-end">
+            <a href="#" class="inline-block bg-[#0008CA] text-white text-xs font-semibold px-4 py-2 rounded">Keep Reading...</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white overflow-hidden isolate rounded-tl-[120px] sm:rounded-tl-[200px] rounded-br-[80px] sm:rounded-br-[130px] mx-auto w-full max-w-xs">
+        <img src="/public/images/tech woman.png" alt="The Future Of Innovation" class="w-full h-60 sm:h-72 object-cover block" />
+        <div class="p-6">
+          <h3 class="font-baloo text-lg font-bold mb-2 text-black">The Future Of Innovation</h3>
+          <p class="text-sm text-[#0008CA] leading-relaxed mb-4">
+            Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus.
+          </p>
+          <div class="flex justify-start">
+            <a href="#" class="inline-block bg-[#0008CA] text-white text-xs font-semibold px-4 py-2 rounded">Keep Reading...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-14 sm:py-16 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-baloo text-[#0008CA] text-3xl sm:text-4xl md:text-5xl font-bold mb-2">Speakers</h2>
+      <div class="h-6 sm:h-9.5 bg-[#F4F4F4] mb-8 sm:mb-10"></div>
+
+      <div class="grid grid-cols-[auto_1fr] gap-4 sm:gap-6 items-start mb-8 sm:mb-10">
+        <img src="/public/images/speaker1.png" alt="Speaker" class="rounded-full object-cover ring-4 sm:ring-7 p-1.5 sm:p-2 w-20 h-20 sm:w-35 sm:h-35 ring-[#ECA922]" />
+        <div>
+          <h4 class="font-baloo text-[#0008CA] text-base sm:text-lg font-bold mb-1">John Doe</h4>
+          <p class="text-sm text-gray-600 leading-relaxed mb-2">
+            Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada.
+          </p>
+          <div class="flex gap-3">
+            <img src="/public/images/socials icon.png" alt="" class="h-5 sm:h-[3vh]">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-[auto_1fr] gap-4 sm:gap-6 items-start mb-8 sm:mb-10">
+        <img src="/public/images/speaker2.png" alt="Speaker" class="rounded-full object-cover ring-4 sm:ring-7 p-1.5 sm:p-2 w-20 h-20 sm:w-35 sm:h-35 ring-[#ECA922]" />
+        <div>
+          <h4 class="font-baloo text-[#0008CA] text-base sm:text-lg font-bold mb-1">John Doe</h4>
+          <p class="text-sm text-gray-600 leading-relaxed mb-2">
+            Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada.
+          </p>
+          <div class="flex gap-3">
+            <img src="/public/images/socials icon.png" alt="" class="h-5 sm:h-[3vh]">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-[auto_1fr] gap-4 sm:gap-6 items-start">
+        <img src="/public/images/speaker3.png" alt="Speaker" class="rounded-full object-cover ring-4 sm:ring-7 p-1.5 sm:p-2 w-20 h-20 sm:w-35 sm:h-35 ring-[#ECA922]"/>
+        <div>
+          <h4 class="font-baloo text-[#0008CA] text-base sm:text-lg font-bold mb-1">John Doe</h4>
+          <p class="text-sm text-gray-600 leading-relaxed mb-2">
+            Lorem ipsum dolor sit amet, consectetur. Lobortis ac aliquet ultricies molestie ultrices diam tellus enim purus. Ante laoreet congue porta diam malesuada.
+          </p>
+          <div class="flex gap-3">
+            <img src="/public/images/socials icon.png" alt="" class="h-5 sm:h-[3vh]">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white pt-10 sm:pt-12 pb-6 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between items-start gap-8 mb-10 sm:px-[4vw]">
+      <div>
+        <div class="flex items-center gap-2">
+          <img src="/public/images/logo.png" alt="Tech Urban" class="h-6 w-6 object-contain" />
+          <p class="font-baloo text-2xl font-bold">tech urban</p>
+        </div>
+        <p class="text-xs text-[#ECA922] mt-1">Connect. Innovate. Grow.</p>
+      </div>
+
+      <div class="flex flex-col items-start md:items-end gap-6">
+        <div class="flex gap-10 text-sm text-gray-300">
+          <ul class="space-y-2">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+          <ul class="space-y-2">
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+
+        <img src="/public/images/footter-socials.png" alt="" class="h-4 md:h-5 object-contain">
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 pt-4 text-center text-xs text-gray-500">
+      © 2023 Tech Urban Conference. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    const menuButton = document.querySelector("#menuBtn");
+    const mobileMenu = document.querySelector("#mobileMenu");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = mobileMenu.classList.toggle("hidden");
+      mobileMenu.classList.toggle("flex", !isOpen);
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+    });
+  </script>
+</body>
+</html>

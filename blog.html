@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Ideas, stories, and practical notes from the Tech Urban community." />
+	<title>Tech Urban Journal</title>
+	<link rel="stylesheet" href="./src/output.css" />
+</head>
+<body>
+	<header class="site-header">
+		<nav class="header-inner flex items-center justify-between py-5.5">
+			<a class="brand" href="index.html"><img src="./public/images/logo.png" alt="" /><span>tech urban</span></a>
+			<div class="desktop-nav flex gap-7.5 text-[.9rem]"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="index.html#gallery">Gallery</a><a class="nav-link" href="blog.html" aria-current="page">Blog</a><a class="nav-link" href="index.html#contact">Contact us</a></div>
+			<button class="menu-button" id="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+		</nav>
+		<div class="mobile-menu header-inner" id="mobile-menu"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="index.html#gallery">Gallery</a><a class="nav-link" href="blog.html" aria-current="page">Blog</a><a class="nav-link" href="index.html#contact">Contact us</a></div>
+		<div class="header-inner hero"><div class="eyebrow">The Tech Urban Journal</div><h1>ideas worth <span>sharing.</span></h1><p class="hero-copy">Notes from the people building what comes next: sharp perspectives, useful lessons, and a little room to think.</p></div>
+	</header>
+	<main class="page-width">
+		<div class="section-heading"><h2>Latest notes</h2><span class="result-count" id="result-count" aria-live="polite">Loading stories...</span></div>
+		<section class="posts-grid" id="posts-grid" aria-live="polite"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></section>
+	</main>
+	  <footer class="bg-black text-white pt-10 sm:pt-12 pb-6 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between items-start gap-8 mb-10 sm:px-[4vw]">
+      <div>
+        <div class="flex items-center gap-2">
+          <img src="/public/images/logo.png" alt="Tech Urban" class="h-6 w-6 object-contain" />
+          <p class="font-baloo text-2xl font-bold">tech urban</p>
+        </div>
+        <p class="text-xs text-[#ECA922] mt-1">Connect. Innovate. Grow.</p>
+      </div>
+
+      <div class="flex flex-col items-start md:items-end gap-6">
+        <div class="flex gap-10 text-sm text-gray-300">
+          <ul class="space-y-2">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+          <ul class="space-y-2">
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+
+        <img src="/public/images/footter-socials.png" alt="" class="h-4 md:h-5 object-contain">
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 pt-4 text-center text-xs text-gray-500">
+      © 2023 Tech Urban Conference. All rights reserved.
+    </div>
+  </footer>
+	<script>
+		const menuButton = document.querySelector("#menu-button");
+		const mobileMenu = document.querySelector("#mobile-menu");
+		menuButton.addEventListener("click", function () {
+			const isOpen = mobileMenu.classList.toggle("open");
+			menuButton.setAttribute("aria-expanded", String(isOpen));
+		});
+	</script>
+	<script src="blog.js" defer></script>
+</body>
+
+</html>
