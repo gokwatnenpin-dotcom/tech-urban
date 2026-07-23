@@ -11,7 +11,11 @@
 	<header class="site-header">
 		<nav class="header-inner flex items-center justify-between py-5.5">
 			<a class="brand" href="index.html"><img src="./public/images/logo.png" alt="" /><span>tech urban</span></a>
-			<div class="desktop-nav flex gap-7.5 text-[.9rem]"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="index.html#gallery">Gallery</a><a class="nav-link" href="blog.html" aria-current="page">Blog</a><a class="nav-link" href="index.html#contact">Contact us</a></div>
+			<div class="desktop-nav flex gap-7.5 text-[.9rem]"><a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="index.html#gallery">Gallery</a>
+				<a class="nav-link" href="blog.html" aria-current="page">Blog</a>
+				<a class="nav-link" href="index.html#contact">Contact us</a>
+			</div>
 			<button class="menu-button" id="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 		</nav>
 		<div class="mobile-menu header-inner" id="mobile-menu"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="index.html#gallery">Gallery</a><a class="nav-link" href="blog.html" aria-current="page">Blog</a><a class="nav-link" href="index.html#contact">Contact us</a></div>
@@ -53,12 +57,11 @@
 	<script>
 		const menuButton = document.querySelector("#menu-button");
 		const mobileMenu = document.querySelector("#mobile-menu");
-		menuButton.addEventListener("click", function () {
+		menuButton.addEventListener("click" , function () {
 			const isOpen = mobileMenu.classList.toggle("open");
 			menuButton.setAttribute("aria-expanded", String(isOpen));
 		});
 	</script>
 	<script src="blog.js" defer></script>
 </body>
-
 </html>
